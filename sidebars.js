@@ -2,9 +2,30 @@ module.exports = {
   docs: [
     {
       type: 'category',
-      label: 'Docusaurus Tutorial',
+      label: 'Getting Started',
+      collapsed: false,
+      items: ['installation', 'setup-handle-errors', 'setup-handle-updates'],
+    },
+    {
+      type: 'category',
+      label: 'Basics',
+      collapsed: false,
       items: [
-        'getting-started',
+        'call-the-telegram-methods',
+        'custom-storage',
+        'test-phone-numbers',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Guides',
+      collapsed: false,
+      items: ['sign-up'],
+    },
+    {
+      type: 'category',
+      label: 'Temp',
+      items: [
         'create-a-page',
         'create-a-document',
         'create-a-blog-post',
