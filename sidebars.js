@@ -22,16 +22,5 @@ module.exports = {
       collapsed: false,
       items: ['sign-up'],
     },
-    {
-      type: 'category',
-      label: 'Temp',
-      items: [
-        'create-a-page',
-        'create-a-document',
-        'create-a-blog-post',
-        'markdown-features',
-        'thank-you',
-      ],
-    },
   ],
 };
