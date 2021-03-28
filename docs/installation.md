@@ -35,6 +35,26 @@ const MTProto = require('@mtproto/core');
 const MTProto = require('@mtproto/core/envs/browser');
 ```
 
+## Configure default storage
+
+We have default storages. The storage is used to store the session (authentication keys, server salts and time offset). Depending on the environment, you need to pass different parameters for the storage. But you can also use [custom storage](custom-storage.md)
+
+### For `node` environment
+
+In the `storageOptions.path`, pass the absolute path to the json file through the constructor
+
+```js
+new MTProto({
+  storageOptions: {
+    path: path.resolve(__dirname, './data/1.json'),
+  },
+});
+```
+
+### For `browser` environment
+
+The [`window.localStorage`](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage) is used for storage. You don't need to pass `storageOptions`
+
 ## Getting `api_id` and `api_hash`
 
 :::danger About abuse
@@ -45,14 +65,14 @@ If you use the Telegram API for flooding, spamming, faking subscriber and view c
 
 1. Login into [https://my.telegram.org/](https://my.telegram.org/)
 2. Go to [https://my.telegram.org/apps](https://my.telegram.org/apps) and fill out the form
-3. Take the `api_id` and `api_hash` of your app
+3. Take the `api_id` and `api_hash` from the "app configuration" section
 
 ## Final check
 
 ### Create simple file
 
 ```js title="example.js"
-const MTProto = require('@mtproto/core/envs/node');
+const MTProto = require('@mtproto/core');
 
 const api_id = YOU_API_ID;
 const api_hash = YOU_API_HASH;
@@ -61,6 +81,10 @@ const api_hash = YOU_API_HASH;
 const mtproto = new MTProto({
   api_id,
   api_hash,
+
+  storageOptions: {
+    path: path.resolve(__dirname, './data/1.json'),
+  },
 });
 
 // 2. Print the user country code
