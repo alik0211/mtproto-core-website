@@ -18,7 +18,7 @@ class CustomStorage {
 }
 ```
 
-Examples can be found in the "[ready-made storages](#ready-made-storages)" section
+Examples can be found in the [last section](#ready-made-storages)
 
 ### 2. Use
 
