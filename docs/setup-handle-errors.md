@@ -4,7 +4,7 @@ title: Setup. Handle Errors
 
 ```js title="api.js"
 const path = require('path');
-const MTProto = require('@mtproto/core/envs/node');
+const MTProto = require('@mtproto/core');
 const { sleep } = require('@mtproto/core/src/utils/common');
 
 class API {
