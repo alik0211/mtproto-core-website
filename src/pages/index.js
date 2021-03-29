@@ -1,9 +1,9 @@
 import React from 'react';
 import clsx from 'clsx';
-import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import Layout from '@theme/Layout';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './styles.module.css';
 
 const features = [
@@ -39,7 +39,7 @@ const features = [
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={clsx('col col--4', styles.feature)}>
@@ -56,24 +56,29 @@ function Feature({imageUrl, title, description}) {
 
 export default function Home() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+
+  const { siteConfig = {} } = context;
+
   return (
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
-      <header className={clsx('hero hero--primary', styles.heroBanner)}>
-        <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className={clsx(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('docs/')}>
-              Get Started
-            </Link>
+    <Layout title="Telegram API JS" description={siteConfig.tagline}>
+      <header className={styles.hero}>
+        <div className={clsx('container', styles.hero__inner)}>
+          <h1 className={styles.hero__title}>{siteConfig.title}</h1>
+          <p className={styles.hero__subtitle}>{siteConfig.tagline}</p>
+          <div className={styles.hero__actions}>
+            <div className={styles.hero__action}>
+              <Link className="button button--primary" to={useBaseUrl('docs/')}>
+                Get Started
+              </Link>
+            </div>
+            <div className={styles.hero__action}>
+              <iframe
+                src="https://ghbtns.com/github-btn.html?user=alik0211&amp;repo=mtproto-core&amp;type=star&amp;count=true&amp;size=large"
+                width={160}
+                height={30}
+                title="GitHub Stars"
+              />
+            </div>
           </div>
         </div>
       </header>
