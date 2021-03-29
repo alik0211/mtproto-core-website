@@ -8,53 +8,39 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: 'Actual',
+    description: <>121 layer in the API scheme</>,
+  },
+  {
+    title: 'Fast',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        For the Node.js, it uses the TCP and crypto module. For the browser, it
+        uses WebSocket and window.crypto.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: 'Easy',
+    description: <>Cryptography is hidden. Work with the API at a high level</>,
+  },
+  {
+    title: 'Smart',
+    description: <>Automatically sync authorization on all DCs</>,
+  },
+  {
+    title: '2FA support',
     description: (
-      <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
-      </>
+      <>Use the library's built-in function to calculate 2FA parameters</>
     ),
   },
   {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
-    description: (
-      <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
-      </>
-    ),
+    title: 'Secure',
+    description: <>Complies with Telegram security guidelines</>,
   },
 ];
 
-function Feature({ imageUrl, title, description }) {
-  const imgUrl = useBaseUrl(imageUrl);
-  return (
-    <div className={clsx('col col--4', styles.feature)}>
-      {imgUrl && (
-        <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
-        </div>
-      )}
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
-  );
-}
-
-export default function Home() {
+function Home() {
   const context = useDocusaurusContext();
 
   const { siteConfig = {} } = context;
@@ -88,7 +74,10 @@ export default function Home() {
             <div className="container">
               <div className="row">
                 {features.map((props, idx) => (
-                  <Feature key={idx} {...props} />
+                  <div className={clsx('col col--4', styles.feature)} key={idx}>
+                    <h3>{props.title}</h3>
+                    <p>{props.description}</p>
+                  </div>
                 ))}
               </div>
             </div>
@@ -98,3 +87,5 @@ export default function Home() {
     </Layout>
   );
 }
+
+export default Home;

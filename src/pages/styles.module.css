@@ -38,6 +38,10 @@
   overflow: hidden;
 }
 
+.features {
+  padding: 64px 0;
+}
+
 @media screen and (max-width: 640px) {
   .hero__inner {
     padding: 24px 16px;
