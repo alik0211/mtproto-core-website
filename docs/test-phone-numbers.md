@@ -20,7 +20,7 @@ Phone number template - `+99966XYYYY`. The login code will always be `XXXXX`
 1. `X` - from 1 to 3. Emulate an user associated with DC number `X`
 2. `YYYY` - from 0000 to 9999. Random part
 
-You will probably need to [sign up](sign-up.md) a user for the phone number you generate
+You will probably need to [sign up](user-authorization.md) a user for the phone number you generate
 
 :::tip Limits on production
 

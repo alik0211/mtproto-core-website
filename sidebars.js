@@ -20,7 +20,7 @@ module.exports = {
       type: 'category',
       label: 'Guides',
       collapsed: false,
-      items: ['sign-up'],
+      items: ['user-authorization'],
     },
   ],
 };
