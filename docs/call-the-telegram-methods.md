@@ -13,7 +13,7 @@ To call the Telegram method, use the `api.call(method, params, options)` method
 
 ### `method`
 
-Method name from [methods list](https://core.telegram.org/methods). Example:
+Method name from [methods list](https://core.telegram.org/methods). Example for [help.getNearestDc](https://core.telegram.org/method/help.getNearestDc):
 ```js
 api.call('help.getNearestDc');
 ```
@@ -49,6 +49,7 @@ api.call('messages.sendMessage', {
 1. **dcId** — Number. Default: `2`. Call the method on a specific DC
 2. **syncAuth** — Boolean. Default: `true`. Copy the authorization to all DCs (if the answer contains a [`auth.authorization`](https://core.telegram.org/constructor/auth.authorization))
 
+Example for [help.getNearestDc](https://core.telegram.org/method/help.getNearestDc):
 ```js
 api.call('help.getNearestDc', {}, {
   dcId: 1,
