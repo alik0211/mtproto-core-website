@@ -1,24 +1,20 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: '@mtproto/core',
+  tagline: 'Telegram API JS (MTProto) client library for Node.js and browser',
+  url: 'https://mtproto-core.js.org',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'alik0211',
+  projectName: 'mtproto-core-website',
   themeConfig: {
     prism: {
       theme: require('prism-react-renderer/themes/vsDark'),
     },
     navbar: {
-      title: 'My Site',
-      logo: {
-        alt: 'My Site Logo',
-        src: 'img/logo.svg',
-      },
+      title: '@mtproto/core',
       items: [
         {
           to: 'docs/',
@@ -28,9 +24,10 @@ module.exports = {
         },
         { to: 'blog', label: 'Blog', position: 'left' },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/alik0211/mtproto-core',
           label: 'GitHub',
           position: 'right',
+          className: 'navbar__item_github',
         },
       ],
     },
@@ -44,22 +41,26 @@ module.exports = {
               label: 'Getting Started',
               to: 'docs/',
             },
+            {
+              label: 'Basics',
+              to: 'docs/call-the-telegram-methods/',
+            },
+            {
+              label: 'Guides',
+              to: 'docs/user-authorization/',
+            },
           ],
         },
         {
           title: 'Community',
           items: [
             {
+              label: 'Telegram Channel',
+              href: 'https://t.me/mtproto_core',
+            },
+            {
               label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://stackoverflow.com/questions/tagged/mtproto-core',
             },
           ],
         },
@@ -72,12 +73,13 @@ module.exports = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/alik0211/mtproto-core',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright:
+        'Made by <a href="https://www.gasymov.com/" target="_blank">Ali Gasymov</a>',
     },
   },
   presets: [
@@ -86,15 +88,11 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          editUrl: 'https://github.com/alik0211/mtproto-core/edit/master/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+          editUrl: 'https://github.com/alik0211/mtproto-core/edit/master/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
