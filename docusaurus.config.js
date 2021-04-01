@@ -88,11 +88,13 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/alik0211/mtproto-core/edit/master/',
+          editUrl:
+            'https://github.com/alik0211/mtproto-core-website/edit/master/',
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/alik0211/mtproto-core/edit/master/blog/',
+          editUrl:
+            'https://github.com/alik0211/mtproto-core-website/edit/master/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
