@@ -17,10 +17,6 @@ class API {
         path: path.resolve(__dirname, './data/1.json'),
       },
     });
-
-    this.mtproto.updateInitConnectionParams({
-      app_version: '2.2.8',
-    });
   }
 
   async call(method, params, options = {}) {
