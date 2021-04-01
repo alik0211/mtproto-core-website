@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>@mtproto/core Blog</title>
+        <link>https://alik0211.github.io/blog</link>
+        <description>@mtproto/core Blog</description>
+        <lastBuildDate>Thu, 01 Apr 2021 00:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <item>
+            <title><![CDATA[Welcome]]></title>
+            <link>https://alik0211.github.io/mtproto-core-website/blog/welcome</link>
+            <guid>welcome</guid>
+            <pubDate>Thu, 01 Apr 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[Welcome!!!]]></description>
+        </item>
+    </channel>
+</rss>
