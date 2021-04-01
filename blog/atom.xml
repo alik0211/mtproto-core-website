@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://alik0211.github.io/blog</id>
+    <id>https://mtproto-core.js.org/blog</id>
     <title>@mtproto/core Blog</title>
     <updated>2021-04-01T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://alik0211.github.io/blog"/>
+    <link rel="alternate" href="https://mtproto-core.js.org/blog"/>
     <subtitle>@mtproto/core Blog</subtitle>
-    <icon>https://alik0211.github.io/img/favicon.ico</icon>
+    <icon>https://mtproto-core.js.org/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Welcome]]></title>
         <id>welcome</id>
-        <link href="https://alik0211.github.io/mtproto-core-website/blog/welcome"/>
+        <link href="https://mtproto-core.js.org/blog/welcome"/>
         <updated>2021-04-01T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Welcome!!!]]></summary>
     </entry>
