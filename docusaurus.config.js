@@ -9,7 +9,11 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'alik0211',
   projectName: 'mtproto-core-website',
+  plugins: ['@docusaurus/plugin-google-analytics'],
   themeConfig: {
+    googleAnalytics: {
+      trackingID: 'UA-112044218-14',
+    },
     prism: {
       theme: require('prism-react-renderer/themes/vsDark'),
     },
