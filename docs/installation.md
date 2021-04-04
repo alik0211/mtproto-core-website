@@ -27,6 +27,7 @@ Depending on your environment, you need to use **different import paths**. Curre
 const MTProto = require('@mtproto/core');
 // or
 // const MTProto = require('@mtproto/core/envs/node');
+const path = require('path');
 ```
 
 ### Import for `browser` environment
@@ -73,6 +74,7 @@ If you use the Telegram API for flooding, spamming, faking subscriber and view c
 
 ```js title="example.js"
 const MTProto = require('@mtproto/core');
+const path = require('path');
 
 const api_id = YOU_API_ID;
 const api_hash = YOU_API_HASH;
