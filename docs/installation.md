@@ -72,6 +72,7 @@ If you use the Telegram API for flooding, spamming, faking subscriber and view c
 ### Create simple file
 
 ```js title="example.js"
+const path = require('path');
 const MTProto = require('@mtproto/core');
 
 const api_id = YOU_API_ID;
