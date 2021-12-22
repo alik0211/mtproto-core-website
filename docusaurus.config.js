@@ -82,7 +82,7 @@ module.exports = {
         },
       ],
       copyright:
-        'Made by <a href="https://www.gasymov.com/" target="_blank">Ali Gasymov</a>',
+        'Made by <a href="https://github.com/alik0211" target="_blank">Ali Gasymov</a>',
     },
   },
   presets: [
