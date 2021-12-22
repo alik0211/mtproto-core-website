@@ -15,7 +15,7 @@ new MTProto({
 
 ## Format
 
-Phone number template - `+99966XYYYY`. The login code will always be `XXXXX`
+Phone number template - `+99966XYYYY`. The login code will always be `XXXXXX`
 
 1. `X` - from 1 to 3. Emulate an user associated with DC number `X`
 2. `YYYY` - from 0000 to 9999. Random part
