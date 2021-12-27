@@ -9,7 +9,7 @@ import styles from './styles.module.css';
 const features = [
   {
     title: 'Actual',
-    description: <>121 layer in the API scheme</>,
+    description: <>133 layer in the API scheme</>,
   },
   {
     title: 'Fast',
