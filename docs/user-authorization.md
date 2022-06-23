@@ -100,7 +100,7 @@ I recommend using [test phone numbers](test-phone-numbers.md) during development
   const user = await getUser();
 
   const phone = '+99966XYYYY';
-  const code = 'XXXXX';
+  const code = 'XXXXXX';
 
   if (!user) {
     const { phone_code_hash } = await sendCode(phone);
