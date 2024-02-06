@@ -72,8 +72,17 @@ If you use the Telegram API for flooding, spamming, faking subscriber and view c
 ### Create simple file
 
 ```js title="example.js"
+//for  node environment
 const path = require('path');
 const MTProto = require('@mtproto/core');
+
+	@@ -94,6 +95,26 @@ mtproto.call('help.getNearestDc').then(result => {
+});
+```
+
+```js title="example.js"
+//for  browser environment
+const MTProto = require('@mtproto/core/envs/browser');
 
 const api_id = YOU_API_ID;
 const api_hash = YOU_API_HASH;
@@ -83,9 +92,6 @@ const mtproto = new MTProto({
   api_id,
   api_hash,
 
-  storageOptions: {
-    path: path.resolve(__dirname, './data/1.json'),
-  },
 });
 
 // 2. Print the user country code
